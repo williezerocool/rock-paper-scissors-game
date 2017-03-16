@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Rock, paper, scissors game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+        <script type="text/javascript" src="rockPaperScissorsGame.js"></script>
+    
+    </head>
+   
+    <body>
+        <div class="jumbotron">
+            <h1>Rock, Paper, Scissors</h1>
+            <p>Stay and Play</p>
+        </div>
+        
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label class="control-label">Type you're pick</label>
+                    <input class="form-conrtol" type="text" name="user">
+                </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-block" onclick="getWinner(); addScore();">Press to play</button>
+                    </div>
+            </form>
+            
+            <p id="myP"></p>
+            <div class="table-responsive">    
+                <table class="table-striped" border="1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Score</th>
+                        </tr>
+                        <tr>
+                            <th>cpu</th>
+                            <th>You</th>
+                        </tr>
+                       
+                    </thead>
+                    <tr>
+                        <td id="cpuCount">0</td>
+                        <td id="userCount">0</td>
+                    </tr>
+                </table>
+            </div>    
+        </div>
+    </body>
+</html>
